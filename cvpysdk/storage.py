@@ -435,7 +435,7 @@ class DiskLibraries(object):
                 "libraryName": library_name,
                 "mountPath": mount_path,
                 "loginName": username,
-                "password": password,
+                "password": b64encode(password),
                 "opType": 1
             }
         }
